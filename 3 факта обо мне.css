@@ -1,0 +1,27 @@
+img {
+  position: absolute;
+  align-items: right;
+  border-radius:100px;
+  float:left;
+  box-shadow:0px 0px 5px  #000000;
+}
+h1 {
+  color:red;
+  background-color: pink;
+	position: flex;
+	padding: 20px 200px;
+    margin: 0px 100px;
+	display: flex;
+}
+
+div {
+  font-style: italic;
+	padding: 20px;
+  margin: 0px;
+	display: left;
+}
+p {
+  color: red;
+  margin: 10px 280px;
+}
+
