@@ -1,0 +1,255 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+
+}
+
+ul {
+  list-style :none;
+
+}
+
+body {
+  font-family: 'Cinzel', serif;
+  color:#303D3B;
+  text-decoration: none;
+  list-style-type: none;
+}
+header {
+ 
+  width: 100%;
+  height: 100%;
+
+  }
+
+.header_nav {
+  background-color: #BEFFEC;
+  background-image: url("./_!-- VikkiRedBlog --_.png");
+  background-size: 15% ;
+  background-repeat: no-repeat;
+  background-position:left center;
+  overflow: hidden;
+  position:fixed;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: stretch;
+  font-size: 10%;
+  width: -webkit-fill-available;
+  height: auto;
+  }
+  
+ .header_nav_ul {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  
+ }
+
+ .header_nav a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px
+  } 
+  
+  .work {
+    background-color: #99FFE0;
+    width: 25%;
+  }
+  .about {
+    background-color: #30F697;
+    width: 25%;
+  }
+  .blog {
+    background-color: #3EB793;
+    width: 25%;
+  }
+  .contact {
+    background-color: #639488;
+    width: 25%;
+  } 
+
+  .menu-bar_dropdown {
+    justify-content: center;
+    background-color: #303D3B;
+  }
+
+ 
+  .header_fon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url("./Photofon.png");
+    background-position:top right;
+    background-repeat: no-repeat;
+    background-color: #BEFFEC;
+    background-size: 50%;
+    width: 100%;
+    height: 100%;
+    margin: 50px 0px 0px 0px ;
+    padding:0;
+  } 
+
+  h1, h2 {
+    font-family: 'GFS Didot';
+   }
+   h2 {
+    font-size: 65px;
+    font-weight: bold;
+   }
+  
+.header_content-h1 {
+ 
+}
+
+.about-container {
+  display:inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+    
+
+    .review_container {
+      background-color: rgba(190,255,236,0.21);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 3%;
+      margin:3%;
+      max-width: 30%;
+      font-size: 14px;
+    }
+    .review_stars {
+      position:top left;
+      margin: 5%;
+    }
+    .review_p {
+      margin: 5%;
+    }
+    .reviewer {
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 7px;
+    }
+   
+    
+    .button {
+       background-color: #C5F931;
+       box-shadow: 0px 0px 2px rgba(48, 61, 59, 0.5);
+       border:0px;
+       border-radius:30px 0px 30px 30px;
+       width: 15vw;
+       height: 5vh;
+       font-size: 90%;
+       font-family: 'Cinzel';
+    }
+
+
+
+.about_experience_container {
+  display: flex;
+  flex-direction: column;
+}
+.about_h2 {
+  
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+.about_experience {
+  display: flex;
+ flex-direction: row;
+ justify-content: flex-end;
+ list-style-type: none;
+  }
+
+
+.about_experience_programm {
+   display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style-type: none;
+  align-items:center;
+  margin:1%;
+  justify-items: center;
+   }
+
+    .work_container {
+      background-color: #99FFE0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10%;
+    
+     }
+    #work {
+      display:flex;
+      background-color: #30F697;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: stretch;
+      height: 33px;
+      width: 1054px;
+      font-size:25px; 
+  
+     }
+     
+    
+   
+   
+  .work_h2 {
+    
+    
+  }
+     .work_item {
+     font-size: 24px;
+      display:flex;
+      flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: flex-start;
+    
+     }
+      .work_item-icon {
+        
+        max-width: 500px;
+      }
+
+      #work_p {
+        font-size: 10px;
+      }
+  
+  
+  
+
+      /*      hover   elements  */
+      
+      .header_nav a:hover {
+        background-color: #C5F931;
+        display: block;
+        text-decoration: none;
+        align-items: stretch;
+        text-align: center;
+        text-decoration: none;
+        font-size: 15px;
+      }
+
+
+     
+      @media screen and (max-width: 900px) {
+         header li {
+          visibility: hidden;
+        }
+      }
+
