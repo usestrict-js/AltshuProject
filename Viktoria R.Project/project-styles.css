@@ -16,19 +16,25 @@ body {
   text-decoration: none;
   list-style-type: none;
 }
+button {
+  cursor: pointer;
+}
 header {
- 
   width: 100%;
   height: 100%;
-
   }
+
+
+
+/*------------------navigation-----------*/
 
 .header_nav {
   background-color: #BEFFEC;
   background-image: url("./_!-- VikkiRedBlog --_.png");
-  background-size: 15% ;
+  background-size: 20% ;
   background-repeat: no-repeat;
   background-position:left center;
+  box-shadow: 0px 1px 2px rgba(48, 61, 59, 0.25);
   overflow: hidden;
   position:fixed;
   top: 0;
@@ -37,7 +43,7 @@ header {
   justify-content: flex-end;
   align-items: stretch;
   font-size: 10%;
-  width: -webkit-fill-available;
+  width: 100%;
   height: auto;
   }
   
@@ -45,7 +51,6 @@ header {
   width: 50%;
   display: flex;
   flex-direction: row;
-  
  }
 
  .header_nav a {
@@ -78,7 +83,8 @@ header {
     background-color: #303D3B;
   }
 
- 
+ /*-----------------header---about-------------------*/
+
   .header_fon {
     display: flex;
     flex-direction: column;
@@ -101,21 +107,32 @@ header {
     font-size: 65px;
     font-weight: bold;
    }
-  
-.header_content-h1 {
+   
+  .header_content_container {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgba(190, 255, 236, 0.86) 46.15%,
+      rgba(99, 148, 136, 0.4644) 99.28%);
+    width: 50%;
+  }
+
+  .header_content-h1 {
  
 }
 
-.about-container {
-  display:inline-flex;
-  flex-direction: row;
-  justify-content: space-around;
+
+
+   .about_container {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
     
 
     .review_container {
-      background-color: rgba(190,255,236,0.21);
-      display: flex;
+      background: rgba(48, 247, 151, 0.26);
+      box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+      display: inline-block;
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
@@ -140,51 +157,62 @@ header {
     }
    
     
-    .button {
+    #button_write {
        background-color: #C5F931;
        box-shadow: 0px 0px 2px rgba(48, 61, 59, 0.5);
-       border:0px;
-       border-radius:30px 0px 30px 30px;
-       width: 15vw;
-       height: 5vh;
+       border-radius: 50px;
+       
+       width: 10vh;
+       height: 2vh;
        font-size: 90%;
        font-family: 'Cinzel';
     }
 
 
-
 .about_experience_container {
+  background: linear-gradient(180deg, rgba(99, 148, 136, 0.4644) 28.69%, rgba(190, 255, 236, 0.86) 88.07%);
   display: flex;
   flex-direction: column;
-}
-.about_h2 {
+  width: 50%;
   
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
 }
 
 
 .about_experience {
   display: flex;
  flex-direction: row;
- justify-content: flex-end;
+ justify-content: space-between;
+ align-items:center;
  list-style-type: none;
+ 
   }
 
+  .about_number {
+    font-size: 60px;
+    color:#C5F931;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
 
 .about_experience_programm {
    display: inline-flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: flex-start;
   list-style-type: none;
   align-items:center;
   margin:1%;
   justify-items: center;
+  padding-right:10%;
    }
 
+
+
+
+
+
+
+
     .work_container {
-      background-color: #99FFE0;
+      background-color: #639488;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -193,6 +221,7 @@ header {
       padding: 10%;
     
      }
+
     #work {
       display:flex;
       background-color: #30F697;
@@ -208,10 +237,10 @@ header {
     
    
    
-  .work_h2 {
-    
-    
-  }
+    .work_h2 {
+      
+    }
+
      .work_item {
      font-size: 24px;
       display:flex;
@@ -222,17 +251,194 @@ header {
     
      }
       .work_item-icon {
-        
-        max-width: 500px;
+        max-width: 400px;
       }
 
-      #work_p {
-        font-size: 10px;
+      .work_p {
+        font-size: 15px;
       }
-  
-  
+  .work_button_view {
+    width: 276px;
+    height: 151px;
+    background: #C5F931;
+    border-radius: 0px 50px 50px 50px;
+  }
   
 
+
+      .preview_section_hidden {
+        display: flex;
+        flex-direction: row;
+      }
+      .work_hidden {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url('./black-and-white-bw-computer-desk\ 1.png');
+        background-repeat: no-repeat;
+        background-size: 50%;
+    width: 100%;
+    height: 100%;
+
+      }
+      .about_hidden {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color:#30F697;
+        width: 100%;
+        height: 100%;
+        background-size: 50%;
+        width: 100%;
+        height: 100%;
+      }
+
+
+
+
+
+      #services {
+        display:flex;
+        background-color: #BEFFEC;
+      }
+    
+  .title_services{
+    
+        background-color:#30F697 ;
+  }
+    
+    .services_blocks {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        grid-gap: 45px;
+    }
+    
+    .services_subtitle {
+        font-size: 48px;
+        line-height: 54px;
+        color:#303D3B;
+        max-width: 352px;
+       
+    }
+    
+    .services_item {
+        height: 283px;
+        width: 352px;
+    }
+    
+    .services_item-icon {
+        width: 56px;
+        height: 56px;
+        display: block;
+        margin-bottom: 20px;
+    }
+    
+    .services_item-title {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 23px;
+        color: #303D3B;
+    }
+    
+    .services_item-content {
+        font-size: 18px;
+        line-height: 28px;
+        max-width: 289px;
+        color: #303D3B;
+    }
+    
+    .services_button-section {
+        width: 352px;
+        height: 166px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-self: center;
+    }
+    
+    .button-services {
+        width: 268px;
+        height: 65px;
+        background-color: #C5F931;
+        border-radius: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #303D3B;
+        cursor: pointer;
+    }
+    
+    .button-services :hover {
+        background-color: #FFFFFFda;
+    }
+    
+
+    .footer_container {
+    background-color: #BEFFEC;
+     }
+
+    #contact {
+      display:flex;
+      background-color: #639488;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: stretch;
+      height: 33px;
+      width: 1054px;
+      font-size:25px; 
+     }
+  
+    .running-string_content {
+      color: #30F697;
+      margin-left: -250px;
+      font-size: 60px;
+      line-height: 66px;
+      width: max-content;
+      text-shadow: 2px 0px 3px #303D3B;
+     }
+    .running-string_content_yellow {
+    color: #C5F931;
+      }
+  
+  .footer_nav {
+      
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      list-style: none;
+      
+  }
+
+  .footer_email {
+    text-decoration: underline;
+  }
+  form {
+    display: inline-flex;
+  }
+  
+  .footer_nav_items1 {
+      width: 80px;
+      
+  }
+  
+
+  
+  .footer_subscribe {
+     background-color: #C5F931; 
+     border-radius: 10px;
+     width: 165px;
+     height: 48px;
+     margin-left: 2%;
+  }  
+  .footer_input {
+    width: 165px;
+    height: 48px;
+    border: 1px solid #303D3B;
+border-radius: 10px;
+
+  }
+ 
       /*      hover   elements  */
       
       .header_nav a:hover {
@@ -245,8 +451,53 @@ header {
         font-size: 15px;
       }
 
+      .footer_nav_items1 a:hover {
+        background-color: #C5F931; 
+      }
+    
+      .footer_nav_items2 a:hover {
+      background-color: #C5F931; 
+      }
 
      
+/*     popup wrte me  */
+.popup-black {
+  display:none;
+}
+.popup-black:before {
+  content: '';
+  background: #000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  z-index: 9999;
+}
+.popup {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  padding: 20px;
+  width: 360px;
+  margin-left: -200px;   
+  background: #fff;
+  border: 1px solid orange;
+  border-radius: 4px;
+  z-index: 99999;
+  opacity: 1;
+}
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+
+
+
+
       @media screen and (max-width: 900px) {
          header li {
           visibility: hidden;
