@@ -955,6 +955,15 @@ form {
 
     .header_content_container {
         background: none;
+        padding: 30px;
+    }
+
+    .header_content_end {
+        margin: 0;
+    }
+
+    #button_write {
+        margin: 30px;
     }
 
     .header_articles {
@@ -995,6 +1004,15 @@ form {
 
     #about {
         width: 100%;
+    }
+
+    .header_content_h1 {
+        padding: 0;
+        margin: 30px auto;
+    }
+
+    .header_content_p {
+        padding: 0;
     }
 
     .work_item, .work_button-section {
