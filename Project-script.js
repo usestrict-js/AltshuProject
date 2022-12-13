@@ -10,17 +10,17 @@ function closeModalWin() {
 }
 
 function successClose() {
-    modalWin.style.display = 'none';
     setTimeout(() => {
         console.log('success');
     }, 3000);
+    //closeModalWin();
 }
 function showModalWin() {
     var darkLayer = document.createElement('div'); // слой затемнения
     darkLayer.id = 'shadow'; // id чтобы подхватить стиль
     document.body.appendChild(darkLayer); // включаем затемнение
 
-    var modalWin = document.getElementById('popupWin'); // находим наше "окно"
+    var modalWin = document.querySelector('.modalwin'); // находим наше "окно"
     modalWin.style.display = 'flex'; // "включаем" его
 
     darkLayer.onclick = closeModalWin;
