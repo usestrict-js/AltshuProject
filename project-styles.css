@@ -440,14 +440,16 @@ form .txt {
 /*--SERVICES--*/
 
 #services {
-
     background-color: #BEFFEC;
+    padding-top: 5%;
+}
+
+.services_blocks {
     padding: 5%;
 }
 
 .title_services {
-    display: flex;
-    flex-direction: column;
+    display: block;
     background-color: #30F697;
     justify-content: flex-start;
     align-items: stretch;
@@ -456,7 +458,6 @@ form .txt {
     font-size: 25px;
     padding-left: 3%;
     padding-right: 10%;
-
 }
 
 .services_blocks {
@@ -541,7 +542,7 @@ form .txt {
     height: 33px;
     width: 70%;
     font-size: 25px;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-bottom: 5%;
     padding-right: 10%;
     margin-right: 0%;
