@@ -1,7 +1,21 @@
 //Форма обратной связи
 
-function showModalWin() {
+function sendDataSuccess() {
+    window.alert('Data is successfully sent');
+}
 
+function closeModalWin() {
+    darkLayer.parentNode.removeChild(darkLayer); // удаляем затемнение
+    modalWin.style.display = 'none'; // делаем окно невидимым
+}
+
+function successClose() {
+    modalWin.style.display = 'none';
+    setTimeout(() => {
+        console.log('success');
+    }, 3000);
+}
+function showModalWin() {
     var darkLayer = document.createElement('div'); // слой затемнения
     darkLayer.id = 'shadow'; // id чтобы подхватить стиль
     document.body.appendChild(darkLayer); // включаем затемнение
@@ -9,23 +23,19 @@ function showModalWin() {
     var modalWin = document.getElementById('popupWin'); // находим наше "окно"
     modalWin.style.display = 'flex'; // "включаем" его
 
-    darkLayer.onclick = function () {  // при клике на слой затемнения все исчезнет
-        darkLayer.parentNode.removeChild(darkLayer); // удаляем затемнение
-        modalWin.style.display = 'none'; // делаем окно невидимым
-        return false;
-    };
-    
+    darkLayer.onclick = closeModalWin;
 }
-//Выпадающее меню
 
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
-    window.onclick = function(e) {
+//Выпадающее меню
+function toggleMenu() {
+    document.querySelector(".header_nav_ul").classList.toggle('show');
+}
+
+window.onclick = function (e) {
     if (!e.target.matches('.menu-bar_dropdown')) {
-    var myDropdown = document.getElementById("myDropdown");
-      if (myDropdown.classList.contains('show')) {
-        myDropdown.classList.remove('show');
-      }
+        var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+        }
     }
-  }
+}

@@ -21,25 +21,16 @@
 
     <nav class="header_nav" id="my_header_nav">
         <div class="logo_container">< !-- VikkiRedBlog -- ></div>
-        <ul class="header_nav_ul">
+        <ul class="header_nav_ul show">
             <li class="work"><a href="#work">Work</a></li>
             <li class="about"><a href="#about">About</a></li>
             <li class="blog"><a href="#blog">Blog</a></li>
             <li class="contact"><a href="#contact">Contact</a></li>
         </ul>
 
-        <button class="menu-bar_dropdown" onclick="myFunction()">
+        <button class="menu-bar_dropdown" onclick="toggleMenu()">
             <img src="./menu_FILL0_wght400_GRAD0_opsz48.png">
         </button>
-        <!--выпадающее меню-->
-        <div class="dropdown">
-            <ul class="dropdown-content" id="myDropdown">
-                <li class="work"><a href="#work">Work</a></li>
-                <li class="about"><a href="#about">About</a></li>
-                <li class="blog"><a href="#blog">Blog</a></li>
-                <li class="contact"><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
     </nav>
 
     <div class="header_fon">
@@ -64,7 +55,7 @@
             <div style="text-align: center" id="popupWin" class="modalwin">
 
                 <h1 class="form_h1">Write me , my dear friend...</h1>
-                <form>
+                <form class="modal_form" onsubmit="successClose()">
                     <div class="row">
                         <label for="name">Your Name:</label>
                         <input type="text" name="name" id="name" class="txt" tabindex="1" placeholder="Ivan Ivanov"

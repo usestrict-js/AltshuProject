@@ -138,16 +138,14 @@ h2 {
 }
 
 .show {
-    display: block;
+    visibility: visible;
 }
 
 
 /*--модальное окно/форма обратной связи--*/
 
 .modalwin {
-    border: 3px outset #303D3B;
     background: #639488;
-    margin: 3%;
     font-size: 12px;
     z-index: 5;
     display: none;
@@ -159,9 +157,25 @@ h2 {
     flex-direction: column;
     padding: 5%;
     border: 1px solid #303D3B;
-    width: fit-content;
-    min-height: fit-content;
+    margin: auto;
+    max-width: 500px;
+    max-height: 400px;
+}
 
+.modal_form {
+    flex-direction: column;
+}
+
+.modal_form .row {
+    margin: 0;
+}
+
+.modal_form textarea {
+    height: 100px;
+}
+
+.modal_form label {
+    height: 34px;
 }
 
 #shadow {
@@ -181,8 +195,6 @@ form {
     display: flex;
     flex-direction: column;
     width: 100%;
-
-
 }
 
 .form_h1 {
@@ -872,12 +884,23 @@ form {
         visibility: hidden;
     }
 
+    .header_nav_ul li {
+        width: 100%
+    }
+
     .menu-bar_dropdown {
         display: block;
     }
 
     .header_fon {
         background-image: none;
+    }
+
+    .header_nav_ul {
+        position: fixed;
+        top: 52px;
+        right: 0;
+        flex-direction: column;
     }
 
     .header_content_container {
