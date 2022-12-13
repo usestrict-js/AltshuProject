@@ -9,12 +9,6 @@ function closeModalWin() {
     modalWin.style.display = 'none'; // делаем окно невидимым
 }
 
-function successClose() {
-    setTimeout(() => {
-        console.log('success');
-    }, 3000);
-    //closeModalWin();
-}
 function showModalWin() {
     var darkLayer = document.createElement('div'); // слой затемнения
     darkLayer.id = 'shadow'; // id чтобы подхватить стиль
@@ -23,7 +17,11 @@ function showModalWin() {
     var modalWin = document.querySelector('.modalwin'); // находим наше "окно"
     modalWin.style.display = 'flex'; // "включаем" его
 
-    darkLayer.onclick = closeModalWin;
+    darkLayer.onclick = function () {  // при клике на слой затемнения все исчезнет
+        darkLayer.parentNode.removeChild(darkLayer); // удаляем затемнение
+        modalWin.style.display = 'none'; // делаем окно невидимым
+        return false;
+    };
 }
 
 //Выпадающее меню
