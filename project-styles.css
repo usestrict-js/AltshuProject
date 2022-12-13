@@ -1083,6 +1083,14 @@ form {
         width: 100%;
         margin-top: 0;
     }
+
+    .preview_section_hidden {
+        flex-direction: column;
+    }
+
+    .preview_section_hidden article {
+        width: 100% !important;
+    }
 }
 
 
