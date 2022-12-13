@@ -1,316 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta author="VikkiRed">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>< !--VRBlog-- ></title>
-  <link rel="icon" href="./Union.png" type="image.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=GFS+Didot&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./project-styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta author="VikkiRed">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>< !--VRBlog-- ></title>
+    <link rel="icon" href="./Union.png" type="image.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=GFS+Didot&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="./project-styles.css">
 </head>
 
 <body link="#303D3B" vlink="#303D3B" alink="red">
-  
- 
-  <header>
+
+
+<header>
 
     <nav class="header_nav" id="my_header_nav">
-      <div class="logo_container">< !-- VikkiRedBlog -- ></div>
-      <ul class="header_nav_ul">
-           <li class="work"><a href ="#work">Work</a></li>
-           <li class="about"><a href ="#about">About</a></li>
-           <li class="blog"><a href ="#blog">Blog</a></li>
-           <li class="contact"><a href ="#contact">Contact</a></li>
-      </ul>
-      
-           <button class="menu-bar_dropdown"  onclick="myFunction()">
-               <img src="./menu_FILL0_wght400_GRAD0_opsz48.png">
-           </button>  
-<!--выпадающее меню-->
-      <div class="dropdown">
-           <ul class="dropdown-content" id="myDropdown">
-               <li class="work"><a href ="#work">Work</a></li>
-               <li class="about"><a href ="#about">About</a></li>
-               <li class="blog"><a href ="#blog">Blog</a></li>
-               <li class="contact"><a href ="#contact">Contact</a></li>
-          </ul>
-      </div>
+        <div class="logo_container">< !-- VikkiRedBlog -- ></div>
+        <ul class="header_nav_ul">
+            <li class="work"><a href="#work">Work</a></li>
+            <li class="about"><a href="#about">About</a></li>
+            <li class="blog"><a href="#blog">Blog</a></li>
+            <li class="contact"><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button class="menu-bar_dropdown" onclick="myFunction()">
+            <img src="./menu_FILL0_wght400_GRAD0_opsz48.png">
+        </button>
+        <!--выпадающее меню-->
+        <div class="dropdown">
+            <ul class="dropdown-content" id="myDropdown">
+                <li class="work"><a href="#work">Work</a></li>
+                <li class="about"><a href="#about">About</a></li>
+                <li class="blog"><a href="#blog">Blog</a></li>
+                <li class="contact"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
-    
-<div class="header_fon">
-  
-         <h1 class="header_content_h1">
-                  <b>I develop</b> awesome
-                   <br/>
-                   websites that make
-                  <br/>
-                  <b>an impact.</b>
-         </h1>
-         <div class="header_content_container">
-        <p class="header_content_p">
-                  Hi! I’m Viktoria, a Full Stack Developer
-                  <br/>
-                  based in Russia. I create information systems
-                  <br/>
-                  for fast-growing startups.
-       </p>
-  
-       <button type="Submit" id="button_write" onclick="showModalWin()">Write me  -- ></button>
-       <div style="text-align: center" id="popupWin" class="modalwin">
-        
-          <h1 class="form_h1">Write me , my dear friend...</h1>
-          <form>
-    <div class="row">
-      <label for="name">Your Name:</label>
-      <input type="text" name="name" id="name" class="txt" tabindex="1" placeholder="Ivan Ivanov" required>
-    </div>
 
-    <div class="row">
-      <label for="email">E-mail Address:</label>
-      <input type="email" name="email" id="email" class="txt" tabindex="2" placeholder=" address@mail.ru" required>
-    </div>
+    <div class="header_fon">
 
-    <div class="row">
-      <label for="message">Your Message:</label>
-      <textarea name="message" id="message" class="txt" tabindex="4" required></textarea>
-    </div>
+        <h1 class="header_content_h1">
+            <b>I develop</b> awesome
+            <br/>
+            websites that make
+            <br/>
+            <b>an impact.</b>
+        </h1>
+        <div class="header_content_container">
+            <p class="header_content_p">
+                Hi! I’m Viktoria, a Full Stack Developer
+                <br/>
+                based in Russia. I create information systems
+                <br/>
+                for fast-growing startups.
+            </p>
 
-<div class="center">
-<input type="submit" id="submitbtn" name="submitbtn" tabindex="5" value="Send Your Message">
-</div>
-        </form>
-        
-        
-    </div>
-       <div class="header_content_end">
-                 <p> Passed the Altshu Web Developing Course
-                 <br/>
-              <a href="http://www.altshu.com">WebDevelopment 2022 • altshu.com</a>
+            <button type="Submit" id="button_write" onclick="showModalWin()">Write me -- ></button>
+            <div style="text-align: center" id="popupWin" class="modalwin">
+
+                <h1 class="form_h1">Write me , my dear friend...</h1>
+                <form>
+                    <div class="row">
+                        <label for="name">Your Name:</label>
+                        <input type="text" name="name" id="name" class="txt" tabindex="1" placeholder="Ivan Ivanov"
+                               required>
+                    </div>
+
+                    <div class="row">
+                        <label for="email">E-mail Address:</label>
+                        <input type="email" name="email" id="email" class="txt" tabindex="2"
+                               placeholder=" address@mail.ru" required>
+                    </div>
+
+                    <div class="row">
+                        <label for="message">Your Message:</label>
+                        <textarea name="message" id="message" class="txt" tabindex="4" required></textarea>
+                    </div>
+
+                    <div class="center">
+                        <input type="submit" id="submitbtn" name="submitbtn" tabindex="5" value="Send Your Message">
+                    </div>
+                </form>
+
+
+            </div>
+            <div class="header_content_end">
+                <p> Passed the Altshu Web Developing Course
+                    <br/>
+                    <a href="http://www.altshu.com">WebDevelopment 2022 • altshu.com</a>
                 </p>
+            </div>
+
+        </div>
+
+
+        <section class="about_container">
+
+
+            <div id="about"> About</div>
+
+            <div class="header_articles">
+
+                <article>
+
+                    <div class="review_container">
+                        <div class="review_stars"><img src="./Frame.png"></div>
+
+                        <div class="review_p"> Working with Viktoria was<br/>interesting. She is a high-organized
+                            <br/>person, that can create simple<br/>websites with Yii-2 and React.js<br/>technologies.
+                        </div>
+
+                        <div class="reviewer"><img src="./Mask group.png"/>Anastasiya Smirnova <br/>
+                            Middle+ FullStack Developer in GEROPHARM
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="about_experience_container">
+
+                    <h2 class="about_h2">Develop websites<br/>
+                        for <b>fast growing</b>
+                        <br/>digital startups</h2>
+
+                    <ul class="about_experience">
+                        <li><span class="about_number">2+</span><br/>Months of experience</li>
+                        <li><span class="about_number">2+</span><br/>Projects completed</li>
+                        <li><span class="about_number">5</span><br/>Technologies learnt</li>
+                    </ul>
+
+                    <ul class="about_experience_programm">
+                        <li><img src="./Group 34.png"> HTML+CSS</li>
+                        <li><img src="./Group 34.png"> JS, React.js</li>
+                        <li><img src="./Group 34.png"> PHP, YII-2</li>
+                        <li><img src="./Group 34.png"> MySQL</li>
+                    </ul>
+
+
+                </article>
+            </div>
+        </section>
     </div>
-  
-  </div>
-
-  
-  <section class="about_container">
-
-    
-    <div id="about"> About</div>
-
-   <div class="header_articles">
-
-    <article>
-      
-      <div class="review_container">
-        <div class="review_stars"><img src="./Frame.png"></div>
-        
-        <div class="review_p"> Working with Viktoria was<br/>interesting. She is a high-organized
-               <br/>person, that can create simple<br/>websites with Yii-2 and React.js<br/>technologies.
-        </div>
-
-        <div class="reviewer"><img src="./Mask group.png"/>Anastasiya Smirnova <br/>
-                              Middle+ FullStack Developer in GEROPHARM
-        </div>
-      
-      </div>
-    
-    </article>
-
-  <article class="about_experience_container">
-
-   <h2 class="about_h2">Develop websites<br/>
-     for <b>fast growing</b>
-     <br/>digital startups</h2>
-
-    <ul class="about_experience">
-      <li><span class="about_number">2+</span><br/>Months of experience</li>
-      <li><span class="about_number">2+</span><br/>Projects completed</li>
-      <li><span class="about_number">5</span><br/>Technologies learnt</li>
-    </ul>
-
-    <ul class="about_experience_programm">
-      <li><img src="./Group 34.png"> HTML+CSS</li>
-      <li><img src="./Group 34.png"> JS, React.js</li>
-      <li><img src="./Group 34.png"> PHP, YII-2</li>
-      <li><img src="./Group 34.png"> MySQL</li>
-    </ul>
-
-    
-    </article>
-</div>
-  </section>
-</div>
 </header>
 
 <main>
-  
+
     <section class="work_container">
-      <div id="work">Work</div>
-      <h2 class="work_h2">Bringing<b> great results</b><br/>for every client</h2>
-    <article class="work_item">
-          <img src="./sergey-zolkin-_UeY8aTI6d0-unsplash 2.png" class="work_item-icon">
-      <h3>About that</h3>
-      <p class="work_p">Soon there will be a lot of interesting things here. Thank you for attention my friend!</p>
-    </article>
-      <article class="work_item">
-          <img src="./rodion-kutsaiev-0VGG7cqTwCo-unsplash 1.png" class="work_item-icon">
-      <h3>About this</h3>
-      <p class="work_p">Soon there will be a lot of interesting things here. Thank you for attantion my friend!</p>
-      </article>
-      <article class="work_item">
-          <img src="./georgie-cobbs-muOHbrFGEQY-unsplash 1.png" class="work_item-icon">
-      <h3>Origin UI/UX Design</h3>
-     <p class="work_p">Beauty will save this world and a good quality product will lead to success!</p>
-      </article>
-      <article class="work_item">
-          <img src="./sigmund-_dJCBtdUu74-unsplash 1.png" class="work_item-icon">
-               <h3>Something interesting</h3>
-      <p class="work_p">Enjoy and be inspired!</p>
-    </article>
-      <article class="work_item">
-          <img src="./luca-bravo-XJXWbfSo2f0-unsplash 1.png" class="work_item-icon">
-                <h3>Look at my work</h3>
-      <p class="work_p">Here will be all of my work</p>
-    </article>
-    <div class="work_button-section">
-      <button class="work_button_view"> VIEW ALL<br/>PROJECTS
-      </button>
-    </div>
+        <div id="work">Work</div>
+        <h2 class="work_h2">Bringing<b> great results</b><br/>for every client</h2>
+        <article class="work_item">
+            <img src="./sergey-zolkin-_UeY8aTI6d0-unsplash 2.png" class="work_item-icon">
+            <h3>About that</h3>
+            <p class="work_p">Soon there will be a lot of interesting things here. Thank you for attention my
+                friend!</p>
+        </article>
+        <article class="work_item">
+            <img src="./rodion-kutsaiev-0VGG7cqTwCo-unsplash 1.png" class="work_item-icon">
+            <h3>About this</h3>
+            <p class="work_p">Soon there will be a lot of interesting things here. Thank you for attantion my
+                friend!</p>
+        </article>
+        <article class="work_item">
+            <img src="./georgie-cobbs-muOHbrFGEQY-unsplash 1.png" class="work_item-icon">
+            <h3>Origin UI/UX Design</h3>
+            <p class="work_p">Beauty will save this world and a good quality product will lead to success!</p>
+        </article>
+        <article class="work_item">
+            <img src="./sigmund-_dJCBtdUu74-unsplash 1.png" class="work_item-icon">
+            <h3>Something interesting</h3>
+            <p class="work_p">Enjoy and be inspired!</p>
+        </article>
+        <article class="work_item">
+            <img src="./luca-bravo-XJXWbfSo2f0-unsplash 1.png" class="work_item-icon">
+            <h3>Look at my work</h3>
+            <p class="work_p">Here will be all of my work</p>
+        </article>
+        <div class="work_button-section">
+            <button class="work_button_view"> VIEW ALL<br/>PROJECTS
+            </button>
+        </div>
     </section>
 
     <section id="services">
-            <title class="title_services">Services</title>
-          <div class="services_blocks">
+        <title class="title_services">Services</title>
+        <div class="services_blocks">
             <h2 class="services_subtitle">Pushing the boundaries of your potential</h2>
             <article class="services_item">
-              <img src="./IMAGE2.png" class="services_item-icon">
-              <h4 class="services_item-title">Branding</h4>
-              <p class="services_item-content">Refresh your logo, revamp your website, and even your letterhead— develop a cohesive aesthetic for your brand.</p>
+                <img src="./IMAGE2.png" class="services_item-icon">
+                <h4 class="services_item-title">Branding</h4>
+                <p class="services_item-content">Refresh your logo, revamp your website, and even your letterhead—
+                    develop a cohesive aesthetic for your brand.</p>
             </article>
             <article class="services_item">
-              <img src="./IMAGE.png"  class="services_item-icon">
-              <h4 class="services_item-title">Packaging</h4>
-              <p class="services_item-content">Rethink labels, boxes, signage, and everything that'll help your product make a great first impression.</p>
+                <img src="./IMAGE.png" class="services_item-icon">
+                <h4 class="services_item-title">Packaging</h4>
+                <p class="services_item-content">Rethink labels, boxes, signage, and everything that'll help your
+                    product make a great first impression.</p>
             </article>
             <article class="services_item">
-              <img src="./IMAGE4.png" class="services_item-icon">
-              <h4 class="services_item-title">Memorabilia</h4>
-              <p class="services_item-content">Choose from easy, affordable options for merch like custom tees and sets of pins.</p>
+                <img src="./IMAGE4.png" class="services_item-icon">
+                <h4 class="services_item-title">Memorabilia</h4>
+                <p class="services_item-content">Choose from easy, affordable options for merch like custom tees and
+                    sets of pins.</p>
             </article>
             <article class="services_item">
-              <img src="./IMAGE3.png" class="services_item-icon">
-              <h4 class="services_item-title">Visual Aids</h4>
-              <p class="services_item-content">Make your point more convincingly with branded flyers, slides, catalogues, infographics.</p>
+                <img src="./IMAGE3.png" class="services_item-icon">
+                <h4 class="services_item-title">Visual Aids</h4>
+                <p class="services_item-content">Make your point more convincingly with branded flyers, slides,
+                    catalogues, infographics.</p>
             </article>
             <div class="services_button-section">
-              <button class="button-services">Contact me</button>
+                <button class="button-services">Contact me</button>
             </div>
-          </section>
-        <section class="blog_container">
-  <div id="blog">Blog</div>
-  <div class="blog_button-section">
-     <h2 class="subtitle">Words on Design, Tech<br/>
-    & Other Things I Love</h2>
-  
-     <button class="button-blog">Explore all posts  -></button>
+    </section>
+    <section class="blog_container">
+        <div id="blog">Blog</div>
+        <div class="blog_button-section">
+            <h2 class="subtitle">Words on Design, Tech<br/>
+                & Other Things I Love</h2>
 
-  </div>
+            <button class="button-blog">Explore all posts -></button>
+
+        </div>
         </div>
         <article class="news-article">
-        <img src="./sergey-zolkin1.png" alt="article picture" class="news-article_picture">
-        <div class="news-article_item-data">
-          <p class="news-article_date">17 OCT, 2022</p>
-          <h5 class="news-article_title">How I’ve started learning web</h5>
-          <p class="news-article_content">Vivamus mattis eu odio non aliquam. Vestibulum tristique congue laoreet. Nulla facilisi.</p>
+            <img src="./sergey-zolkin1.png" alt="article picture" class="news-article_picture">
+            <div class="news-article_item-data">
+                <p class="news-article_date">17 OCT, 2022</p>
+                <h5 class="news-article_title">How I’ve started learning web</h5>
+                <p class="news-article_content">Vivamus mattis eu odio non aliquam. Vestibulum tristique congue laoreet.
+                    Nulla facilisi.</p>
+            </div>
+            <a href="/posts/1" class="news-article_link">View post-- ></a>
+        </article>
+        <article class="news-article">
+            <img src="./domenico-loia1.png" alt="article picture" class="news-article_picture">
+            <div class="news-article_item-data">
+                <p class="news-article_date">25 OCT, 2022</p>
+                <h5 class="news-article_title">Why does JavaScript is so exciting</h5>
+                <p class="news-article_content">Vivamus mattis eu odio non aliquam. Vestibulum tristique congue laoreet.
+                    Nulla facilisi.</p>
+            </div>
+            <a href="/posts/2" class="news-article_link">View post--></a>
+        </article>
+        <article class="news-article">
+            <img src="./lee-campbell1.png" alt="article picture" class="news-article_picture">
+            <div class="news-article_item-data">
+                <p class="news-article_date">10 NOV, 2022</p>
+                <h5 class="news-article_title">How I’ve developed this site</h5>
+                <p class="news-article_content">Vivamus mattis eu odio non aliquam. Vestibulum tristique congue laoreet.
+                    Nulla facilisi.</p>
+            </div>
+            <a href="/posts/3" class="news-article_link">View post--></a>
+        </article>
         </div>
-        <a href="/posts/1" class="news-article_link">View post-- ></a>
-      </article>
-      <article class="news-article">
-        <img src="./domenico-loia1.png" alt="article picture" class="news-article_picture">
-        <div class="news-article_item-data">
-          <p class="news-article_date">25 OCT, 2022</p>
-          <h5 class="news-article_title">Why does JavaScript is so exciting</h5>
-          <p class="news-article_content">Vivamus mattis eu odio non aliquam. Vestibulum tristique congue laoreet. Nulla facilisi.</p>
+    </section>
+    <section class="preview_section_hidden">
+        <article>
+            <div class="work_hidden">
+                <title class="work-hidden_title">Work</title>
+                <p class="work-hidden_content">Favorite projects, award-winning campaigns
+                    and more.</p>
+                <a href="#work" class="work_hidden_link">View all--></a>
+            </div>
+        </article>
+        <article>
+            <div class="about_hidden">
+                <title class="about_hidden_title">About</title>
+                <p class="about-hidden_content">My journey, career highlights and everything else you need to know.</p>
+                <a href="#about" class="about-hidden_link">View all--></a>
+            </div>
+        </article>
+    </section>
+
+
+    <footer>
+        <div class="footer_container">
+
+            <div id="contact"> Contact</div>
+
+            <div class="footer_running-string">
+                <p class="running-string_content">
+                    Have something in mind? <span class="running-string_content_yellow">Let's connect.</span> Have
+                    something in mind? <span class="running-string_content_yellow">Let's connect.</span> Have something
+                    in mind?<span class="running-string_content_yellow">Let's connect.</span>
+                </p>
+            </div>
+
+            <div class="footer_nav">
+                <ul class="footer_email">
+                    <li>vikki04111991@yandex.ru</li>
+                </ul>
+                <ul class="footer_nav_items1">
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <ul class="footer_nav_items2">
+                    <li>vk</li>
+                    <li>hh</li>
+                    <li>Habr</li>
+                    <li><a href=https://github.com/VikkiRed>GitHub</a></li>
+                </ul>
+                <div class="form">
+                    <label>Subscribe to my weekly newsletter</label>
+                    <form>
+                        <input class="footer_input" type="email" required name="email" placeholder="Enter your e-mail">
+                        <button class="footer_subscribe" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer_copyright">
+                <hr/>
+                <p class="end">
+                    © Powered by Viktoria R, 2022
+                </p>
+            </div>
+
         </div>
-        <a href="/posts/2" class="news-article_link">View post--></a>
-      </article>
-      <article class="news-article">
-        <img src="./lee-campbell1.png" alt="article picture" class="news-article_picture">
-        <div class="news-article_item-data">
-          <p class="news-article_date">10 NOV, 2022</p>
-          <h5 class="news-article_title">How I’ve developed this site</h5>
-          <p class="news-article_content">Vivamus mattis eu odio non aliquam. Vestibulum tristique congue laoreet. Nulla facilisi.</p>
-        </div>
-        <a href="/posts/3" class="news-article_link">View post--></a>
-      </article>
-    </div>
-  </section>  
-  <section class="preview_section_hidden">
-    <article>
-      <div class="work_hidden">
-      <title class="work-hidden_title">Work</title>
-      <p class="work-hidden_content">Favorite projects, award-winning campaigns
-        and more.</p>
-        <a href="#work" class="work_hidden_link">View all--></a>
-    </div>
-    </article>
-    <article>
-      <div class="about_hidden">
-        <title class="about_hidden_title">About</title>
-      <p class="about-hidden_content">My journey, career highlights and everything else you need to know.</p>
-      <a href="#about" class="about-hidden_link">View all--></a>
-    </div>
-    </article>
-  </section>
-
-
-<footer>
-    <div class="footer_container">
-
-       <div id="contact"> Contact </div>
-          
-       <div class="footer_running-string">
-            <p class="running-string_content">
-              Have something in mind? <span class="running-string_content_yellow">Let's connect.</span> Have something in mind? <span class="running-string_content_yellow">Let's connect.</span>  Have something in mind?<span class="running-string_content_yellow">Let's connect.</span> 
-            </p>
-       </div>
-       
-    <div class="footer_nav">
-      <ul class="footer_email">
-        <li>vikki04111991@yandex.ru</li>
-      </ul>
-      <ul class="footer_nav_items1">
-        <li><a href ="#work">Work</a></li>
-        <li><a href ="#about">About</a></li>
-        <li><a href ="#blog">Blog</a></li>
-        <li><a href ="#contact">Contact</a></li>
-      </ul>
-      <ul class="footer_nav_items2">
-        <li>vk</li>
-        <li>hh</li>
-        <li>Habr</li>
-        <li><a href =https://github.com/VikkiRed>GitHub</a></li>
-      </ul>
-      <div class="form">
-        <label>Subscribe to my weekly newsletter</label>
-          <form>
-            <input class="footer_input" type="email" required name="email" placeholder="Enter your e-mail">
-            <button class="footer_subscribe" type="submit">Subscribe</button>
-          </form>
-      </div>
-    </div>
-    
-     <hr/>
-      <p class="end">
-      © Powered by Viktoria R, 2022
-      </p>
-
-    </div>
-  </footer>
+    </footer>
 
 </main>
 <script src="./Project-script.js">
