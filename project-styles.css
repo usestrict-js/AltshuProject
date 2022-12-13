@@ -670,6 +670,10 @@ form .txt {
     width: 50%;
 }
 
+.preview_section_title {
+    margin-bottom: 32px;
+}
+
 .work_hidden {
     display: flex;
     flex-direction: column;
@@ -678,6 +682,10 @@ form .txt {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 25%;
+}
+
+.work-hidden_content, .about-hidden_content {
+    margin-bottom: 32px;
 }
 
 .about_hidden {
@@ -695,6 +703,7 @@ form .txt {
 .footer_container {
     padding-top: 52px;
     background-color: #BEFFEC;
+    overflow: hidden;
 }
 
 .footer_copyright {
