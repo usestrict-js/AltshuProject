@@ -1091,6 +1091,26 @@ form {
     .preview_section_hidden article {
         width: 100% !important;
     }
+
+    .footer_container {
+        padding-top: 0;
+    }
+
+    .footer_running-string {
+        display: none;
+    }
+
+    .footer_nav {
+        flex-direction: column;
+    }
+
+    .footer_nav ul {
+        margin-bottom: 30px;
+    }
+
+    #contact {
+        width: 100%;
+    }
 }
 
 
