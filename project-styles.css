@@ -285,10 +285,10 @@ form .txt {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 1%;
     margin: 10%;
-    width: 100%;
     font-size: 14px;
+    padding: 40px;
+    width: 300px;
 }
 
 .review_stars {
@@ -305,9 +305,14 @@ form .txt {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    font-size: 7px;
+    align-self: flex-start;
+    gap: 10px;
+    font-size: 12px;
 }
 
+.reviewer_name {
+    font-weight: bold;
+}
 #button_write {
     background-color: #C5F931;
     box-shadow: 0px 0px 2px rgba(48, 61, 59, 0.5);
@@ -332,10 +337,17 @@ form .txt {
     margin: 0%
 }
 
+.review_container_wrapper {
+    width: 40%;
+}
+
 .about_experience_container {
     display: flex;
     flex-direction: column;
     width: 60%;
+    padding: 35px 40px 35px 96px;
+    justify-content: space-between;
+    gap: 60px;
 }
 
 #about {
@@ -371,28 +383,33 @@ form .txt {
     justify-content: space-between;
     list-style-type: none;
     align-items: center;
-    margin: 1%;
     justify-items: center;
-    padding-right: 10%;
+}
+
+.about_experience_programm li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 
 .work_container {
     background-color: #639488;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+}
 
+.work_container-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-top: 54px;
+    padding-bottom: 54px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 #work {
-    display: flex;
     background-color: #BEFFEC;
-    float: right;
-    justify-content: flex-end;
-    align-items: stretch;
     height: 33px;
     width: 70%;
     font-size: 25px;
@@ -406,10 +423,9 @@ form .txt {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: stretch;
+    align-content: center;
     justify-content: flex-start;
-    margin: 5%;
-
+    width: calc(50% - 40px);
 }
 
 .work_item-icon {
@@ -422,11 +438,9 @@ form .txt {
 }
 
 .work_button-section {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-self: flex-start;
+    align-self: center;
+    width: calc(50% - 40px);
+    text-align: center;
 }
 
 .work_button_view {
@@ -534,7 +548,7 @@ form .txt {
     padding: 5%;
 }
 
-#blog {
+#blog, #work {
     display: flex;
     background-color: #3EB793;
     justify-content: flex-end;
@@ -693,6 +707,11 @@ form .txt {
 
 .work-hidden_content, .about-hidden_content {
     margin-bottom: 32px;
+}
+
+.work_h2 {
+    width: 80%;
+    margin: 0 auto;
 }
 
 .about_hidden {
